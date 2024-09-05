@@ -11,6 +11,10 @@ The program begins with generating a group of tasks with ID, arrival time, and d
 - Each worker waits for tasks from the master process. They do not have active status by themselves.
 - Upon receiving a task, the worker processes it, simulating the running time based on its duration.
 - Once the task is processed, the worker sends the result (print message and processing time) back to the master and then waits for the next task or a termination signal.
+
+## Run command:
+mpiexec -n 16 python3 scheduler.py
+
 ## Example output:
 Task 6 completed in 5.80 seconds\
 .\
